@@ -3,6 +3,7 @@ A neovim config others will envy
 
 ## Table of contents
 - [Install](#install)
+- [Pictures](#pictures)
 - [List of plugins](#plugin-list)
 - [Startup time](#startup-time)
 
@@ -16,6 +17,10 @@ Then, run `nvim` and everything should start installing.
 
 Once installed, restart `nvim` (to make sure all plugins are running) and run
 `:checkhealth` and fix any problems.
+
+## Pictures
+![envi on startup](https://raw.githubusercontent.com/ilexite/files/master/envi/.github/img/envi-start.png)
+![envi general use](https://raw.githubusercontent.com/ilexite/files/master/envi/.github/img/envi-webdev.png)
 
 ## Plugin list
 
