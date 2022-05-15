@@ -11,6 +11,9 @@ telescope.setup({
             "--column",
             "--smart-case",
         },
+        prompt_prefix = " > ",
+        selection_caret = "   ",
+        entry_prefix = "   ",
         sorting_strategy = "ascending",
         layout_config = {
             horizontal = {
@@ -42,7 +45,5 @@ vim.cmd([[
     highlight TelescopePromptBorder guibg=#393f4a
     highlight TelescopePreviewBorder guifg=#31353f guibg=#31353f
     highlight TelescopeResultsBorder guifg=#31353f guibg=#31353f
-    " highlight link TelescopePreviewBorder TelescopeBorder
-    " highlight link TelescopeResultsBorder TelescopeBorder
 ]])
 
