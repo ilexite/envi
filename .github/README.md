@@ -7,6 +7,7 @@
 
 - [Install](#install)
 - [Uninstall](#uninstall)
+- [Showcase](#showcase)
 
 # Install
 
@@ -32,4 +33,15 @@ rm -rf ${XDG_CONFIG_HOME:-$HOME/.config}/nvim
 ```
 
 Then, run neovim and perform a `:PackerClean`. envi should now be uninstalled.
+
+# Showcase
+
+## Dashboard
+![Dashboard](https://raw.githubusercontent.com/ilexite/envi/v2/.github/img/envi-dashboard.png)
+
+## With some code
+![Code](https://raw.githubusercontent.com/ilexite/envi/v2/.github/img/envi-code.png)
+
+## File searching and more
+![Telescope](https://raw.githubusercontent.com/ilexite/envi/v2/.github/img/envi-telescope.png)
 
