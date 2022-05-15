@@ -25,7 +25,7 @@ M.start = function(cfg)
         for _, plugin in pairs(plugins) do
             for _, name in pairs(cfg.disable) do
                 if plugin[1] == name then
-                    plugin.disabled = true
+                    plugin.disable = true
                 end
             end
 

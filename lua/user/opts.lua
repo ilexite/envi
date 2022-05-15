@@ -36,13 +36,17 @@ o.title = true
 o.clipboard = "unnamedplus"
 o.cul = false
 o.cmdheight = 1
+-- o.fillchars = "eob: ,horiz: ,horizup: ,horizdown: ,vert: ,vertleft: ,vertright: ,verthoriz: "
 o.fillchars = "eob: "
+o.laststatus = 3
 o.hidden = true
 o.mouse = ""
 o.termguicolors = true
 o.ruler = true
-o.shell = "/bin/sh"
+-- o.shell = "/bin/sh"
 o.lazyredraw = true
+o.undofile = true
+o.colorcolumn = "+0"
 
 -- Disable builtins which aren't needed
 local disabled_builtins = {

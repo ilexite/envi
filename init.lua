@@ -11,6 +11,9 @@
 local exists, impatient = pcall(require, "impatient.nvim")
 if exists then impatient.enable_profile() end
 
+-- Don't load ShaDa file instantly
+require("util.shada")
+
 -- User config
 require("user.opts")
 require("user.keymaps")
@@ -18,7 +21,4 @@ require("user.autocommands")
 
 -- Do plugin stuff
 require("plugin").start(require("user.plugins"))
-
--- Don't load ShaDa file instantly
-require("util.shada")
 

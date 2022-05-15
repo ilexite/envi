@@ -44,7 +44,15 @@ components.active[1] = { {
     {
         provider = "file_info",
         icon = "",
-        right_sep = "  ",
+    },
+    {
+        provider = "|",
+        hl = {
+            fg = "disabled",
+            style = "bold",
+        },
+        left_sep = " ",
+        right_sep = " ",
     },
     {
         provider = function()
@@ -67,6 +75,20 @@ components.active[1] = { {
 }
 
 components.active[2] = {
+    {
+        provider = "git_branch",
+        right_sep = {
+            " ",
+            {
+                str = "|",
+                hl = {
+                    fg = "disabled",
+                    style = "bold",
+                },
+            },
+            " ",
+        },
+    },
     {
         provider = function()
             return vim.api.nvim_buf_line_count(0) .. " lines"

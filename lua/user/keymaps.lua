@@ -22,3 +22,22 @@ map("t", "<esc><esc>", "<C-\\><C-n>")
 map("n", ";", ":")
 map("v", ";", ":")
 
+function textwidth()
+    local o = vim.opt_local
+
+    if o.textwidth._value == 0 then
+        o.textwidth = 80
+    elseif o.textwidth._value == 80 then
+        o.textwidth = 120
+    else
+        o.textwidth = 0
+    end
+end
+
+-- Cycle margin widths
+map("n", "<leader>m", "<cmd>lua textwidth()<cr>")
+
+-- In case you forget to <Esc>
+map("i", ":q<cr>", "<cmd>q<cr>")
+map("i", ":wq<cr>", "<cmd>wq<cr>")
+
