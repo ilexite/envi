@@ -19,8 +19,8 @@ Once installed, restart `nvim` (to make sure all plugins are running) and run
 `:checkhealth` and fix any problems.
 
 ## Pictures
-![envi on startup](https://raw.githubusercontent.com/ilexite/envi/master/.github/img/envi-start.png)
-![envi general use](https://raw.githubusercontent.com/ilexite/envi/master/.github/img/envi-webdev.png)
+![envi on startup](https://raw.githubusercontent.com/ilexite/envi/v1/.github/img/envi-start.png)
+![envi general use](https://raw.githubusercontent.com/ilexite/envi/v1/.github/img/envi-webdev.png)
 
 ## Plugin list
 
