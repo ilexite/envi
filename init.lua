@@ -8,7 +8,7 @@
 -- Made by ilexite
 
 -- Start impatient.nvim if installed
-local exists, impatient = pcall(require, "impatient.nvim")
+local exists, impatient = pcall(require, "impatient")
 if exists then impatient.enable_profile() end
 
 -- Don't load ShaDa file instantly
