@@ -19,6 +19,8 @@ autocmd("FileType", {
     callback = function()
         vim.o.ruler = false
         vim.o.laststatus = 0
+
+        vim.api.nvim_buf_set_keymap(0, "n", "<esc>", "<cmd>q!<cr>", { silent = true })
     end,
 })
 
