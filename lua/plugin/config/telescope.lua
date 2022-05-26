@@ -11,8 +11,8 @@ telescope.setup({
             "--column",
             "--smart-case",
         },
-        prompt_prefix = " > ",
-        selection_caret = "   ",
+        prompt_prefix = "  ",
+        selection_caret = "  ",
         entry_prefix = "   ",
         sorting_strategy = "ascending",
         layout_config = {
@@ -38,8 +38,8 @@ vim.cmd([[
     highlight TelescopeNormal guibg=#31353f
     highlight TelescopePromptNormal guibg=#393f4a
 
-    highlight TelescopePreviewTitle guibg=#98c379 guifg=#ffffff
-    highlight TelescopePromptTitle guibg=#e86671 guifg=#ffffff
+    highlight TelescopePreviewTitle guibg=#61afef guifg=#282c34
+    highlight TelescopePromptTitle guibg=#e86671 guifg=#282c34
 
     highlight TelescopeBorder guifg=#31353f guibg=#31353f
     highlight TelescopePromptBorder guibg=#393f4a

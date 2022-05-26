@@ -10,7 +10,8 @@ local function button(sc, txt, keybind)
 		cursor = 5,
 		width = 38,
 		align_shortcut = "right",
-		hl = "Comment",
+		hl_shortcut = "Comment",
+		hl = "Identifier",
 	}
 
 	if keybind then
@@ -31,11 +32,18 @@ end
 local default = {}
 
 default.ascii = {
-	[[ .d88b.  88888b.  888   888 888 ]],
-	[[d8P  Y8b 888 "88b 888  88P      ]],
-	[[88888888 888  888 888 d8P  "888 ]],
-	[[Y8b.     888  888 888d8P    888 ]],
-	[[ "Y8888  888  888 8888P     888b]],
+	-- [[ .d88b.  88888b.  888   888 888 ]],
+	-- [[d8P  Y8b 888 "88b 888  88P      ]],
+	-- [[88888888 888  888 888 d8P  "888 ]],
+	-- [[Y8b.     888  888 888d8P    888 ]],
+	-- [[ "Y8888  888  888 8888P     888b]],
+
+    [[⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧     ⣼⣿⣿⡟]],
+    [[ ⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧   ⣼⣿⣿⡟ ]],
+    [[                   ⢻⣿⣿⣧ ⣼⣿⣿⡟  ]],
+    [[                    ⢻⣿⣿⣿⣿⣿⡟   ]],
+    [[                     ⢻⣿⣿⣿⡟    ]],
+    [[                      ⢻⣿⡟     ]],
 }
 
 default.header = {
@@ -43,7 +51,7 @@ default.header = {
 	val = default.ascii,
 	opts = {
 		position = "center",
-		hl = "NormalNC",
+		hl = "Identifier",
 	},
 }
 
@@ -62,13 +70,22 @@ default.buttons = {
 		button("SPC e n", "  New File", "<cmd>ene | :startinsert<cr>"),
 		button("SPC f f", "  Find File", "<cmd>Telescope find_files<cr>"),
 		button("SPC f r", "  Recent File", "<cmd>Telescope oldfiles<cr>"),
-		button("SPC f t", "פּ  File Tree", "<cmd>NvimTreeFocus<cr>"),
+		-- button("SPC f t", "פּ  File Tree", "<cmd>NvimTreeFocus<cr>"),
 		button("SPC t t", "  Terminal", "<cmd>terminal<cr>"),
 		button("SPC e s", "  Settings", "<cmd>e $MYVIMRC | :cd %:p:h <cr>"),
 	},
 	opts = {
 		spacing = 1,
 	},
+}
+
+default.fortune = {
+    type = "text",
+    val = require("util.vimfortune")(),
+    opts = {
+        position = "center",
+        hl = "Comment",
+    },
 }
 
 alpha.setup({
@@ -79,6 +96,8 @@ alpha.setup({
 		default.footer,
 		{ type = "padding", val = 2 },
 		default.buttons,
+		{ type = "padding", val = 7 },
+        default.fortune,
 	},
 	opts = {},
 })

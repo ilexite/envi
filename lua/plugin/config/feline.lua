@@ -116,7 +116,7 @@ components.active[2] = {
     },
     {
         provider = "scroll_bar",
-        left_sep = "  "
+        left_sep = "  ",
     },
 }
 
